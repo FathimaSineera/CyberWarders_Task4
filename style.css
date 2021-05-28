@@ -1,7 +1,6 @@
 .container{
     display: grid;
     grid-template-rows: 50px 175px 150px 100px;
-    gap: 5px;
 }
 .r1 .col{
     background-color: rgb(250, 174, 33);
@@ -14,4 +13,8 @@
 }
 .r4 .col{
     background-color: gainsboro;
+}
+.col{
+    background-clip:content-box;
+    padding: 5px;
 }

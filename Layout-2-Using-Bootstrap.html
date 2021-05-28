@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout-using-Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+        <style>
+            .container__one{
+                background-color: whitesmoke;
+                min-height: 350px;
+                font-size: 4rem;
+            }
+            .green{
+                background-color: rgb(44, 236, 172);
+            }
+            .blue{
+                background-color: rgb(122, 188, 241);
+            }
+            .blue,.green{
+                background-clip: content-box;
+                padding: 5px;
+            }
+
+
+            .container__two{
+                background-color: rgb(80, 6, 58);
+                min-height: 350px;
+                color: white;
+                font-size: 4rem;
+            }
+            .cel{
+                background-color: rgba(255, 255, 255, 20%);
+                background-clip: content-box;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid container__one">
+            <div class="row">
+                <div class="col-4 blue">B1</div>
+                <div class="col-8 green">B2</div>
+            </div>
+
+            <div class="row row-cols-lg-2">
+                <div class="col-md-12">                   
+                        <div class="row">
+                            <div class="col green">B3</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col blue">B4</div>
+                            <div class="col green">B5</div>
+                        </div>
+
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col blue">B6</div>
+
+                        <div class="col">
+                            <div class="row green">B7</div>
+                            <div class="row blue">B8</div>
+                            <div class="row green">B9</div> 
+                        </div>                       
+                    </div>               
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container__two">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 cel">1</div>
+                <div class="col-lg-3 col-md-3 cel">2</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 cel">3</div>
+                <div class="col">
+                    <div class="row cel">4</div>
+                    <div class="row cel">5</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
