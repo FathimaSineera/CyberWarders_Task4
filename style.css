@@ -1,20 +1,25 @@
-.container{
-    display: grid;
+.container {
+    display           : grid;
     grid-template-rows: 50px 175px 150px 100px;
 }
-.r1 .col{
+
+.r1 .col {
     background-color: rgb(250, 174, 33);
 }
-.r2 .col{
+
+.r2 .col {
     background-color: rgba(184, 238, 57, 0.904);
 }
-.r3 .col{
+
+.r3 .col {
     background-color: rgb(35, 156, 236);
 }
-.r4 .col{
+
+.r4 .col {
     background-color: gainsboro;
 }
-.col{
-    background-clip:content-box;
-    padding: 5px;
+
+.col {
+    background-clip: content-box;
+    padding        : 5px !important;
 }
